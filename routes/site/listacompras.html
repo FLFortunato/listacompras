@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styla.css">
+</head>
+<body>
+
+    <section>
+        
+        <header><h1>Lista de compras</h1></header>
+        <div id="comp">
+            <label for="">Item:</label><input type="text" name="itemList" id="itemList">&nbsp; <label for="">Qtd:</label> <input type="number" name="qtd" id="qtd" style="width: 30px;">&nbsp;<label for="">Preço R$:</label> <input type="number" name="price" id="price" style="width: 80px;"><br><br> 
+            <button class= 'addic' id="adds" onclick="adds()">Adicionar</button><br><br>
+            <select name="list" id="list" size="15" style="width: 280px;"></select>
+            <button id="deletar" onclick="delts()">Deletar</button> <button id="limparlist" onclick="clears()">Limpar Lista</button>
+        </div>
+        <div id="total"> </div>
+
+    
+
+    </section>
+
+    <div id="adicionar">
+
+            <header><h2>Adicionar Item à lista</h2></header>
+            <label for="">Item: </label><input type="text" id="addnewinput"> 
+            
+            <select name="" id="addnew">
+                <option value="0">-- --</option>
+                <option value="1">Diversos</option>
+                <option value="2">Bebidas</option>
+                <option value="3">Carnes</option>
+                <option value="4">Utilidades/Limpeza</option>
+                <option value="5">Higiene</option>
+            </select>
+            <button class="addics" onclick ='addsnew()'>Adicionar</button>
+    </div>
+
+    <div id="orc">
+
+        <header><h2>Orçamento</h2></header>
+        <label for=""> Diversos:R$ </label><input type="number" name="" id="DivOrc"><div class="lil" id="1"></div><br><br><br>
+        <label for=""> Bebidas:  R$&nbsp;</label><input type="number" name="" id="BebOrc"><div class="lil" id="2"></div><br><br><br>
+        <label for=""> Carnes:  R$ &nbsp;</label><input type="number" name="" id="CarOrc"><div class="lil" id="3"></div><br><br><br>
+        <label for=""> Utilidades:R$&nbsp;</label><input type="number" name="" id="UOrc"><div class="lil" id="4"></div><br><br><br>
+        <label for=""> Higiene:  R$ &nbsp;</label><input type="number" name="" id="HOrc"><div class="lil" id="5"></div><br><br><br>
+        <label for=""> Total:  R$ &nbsp;</label><input type="number" name="" id="TOrc"><div class="lil" id="6"></div><br><br><br>
+
+    </div>
+
+</body>
+<script src="list.js"></script>
+</html>
